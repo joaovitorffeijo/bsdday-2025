@@ -1,61 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>BSDDAY 2025 - Sobre e Equipe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-  <title>BSDDAY 2025</title>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      min-height: 100vh;
+    }
 
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap" rel="stylesheet">
+    .conteudo {
+      margin-top: auto;
+    }
 
-  <link rel="stylesheet" href="css/global.css">
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 400px;
+    }
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sora: ['Sora', 'sans-serif'],
-          },
-        },
-      },
-    };
-  </script>
+    .sobre, .equipe {
+      flex: 1;
+      min-width: 320px;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .sobre {
+      background-color: #646161;
+      color: #f8f5f5;
+    }
+
+    .sobre h2 {
+      color: #f8f5f5;
+      margin-bottom: 15px;
+    }
+
+    .equipe {
+      background-color: #b71525;
+      color: #fff;
+    }
+
+    .equipe h2 {
+      margin-bottom: 15px;
+    }
+
+    .equipe ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .equipe li {
+      margin-bottom: 12px;
+      font-size: 16px;
+      font-weight: 500;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .equipe li::before {
+      content: "🔗";
+      position: absolute;
+      left: 0;
+      top: 1px;
+    }
+
+    .rodape {
+      background-color: #e0e0e0;
+      padding: 20px 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    .rodape > div {
+      flex: 1;
+      min-width: 200px;
+      padding: 10px;
+    }
+
+    .logo {
+      text-align: center;
+    }
+
+    .logo img {
+      height: 170px;
+      margin-bottom: 8px;
+    }
+
+    .logo p {
+      margin: 0;
+      font-size: 18px;
+      color: #003366;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .rodape {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
-
-<!-- 
-  Dicas: 
-  - Use o Tailwind CSS para estilizar os elementos.
-  - Criem um arquivo CSS separado para estilos de cada secão, se necessário.
-  - Criem um arquivo .js separado para scripts de cada secão, se necessário.
-  - Utilize as cores do arquivo global.css.
--->
-
 <body>
-  <!-- Header - Responsável: Nathan -->
-  <header></header>
+
+  <!-- Espaço em branco acima para futuras seções -->
   
-  <!-- Hero - Responsável: Nathan -->
-  <section id="hero"></section>
+  <div class="conteudo">
+    <div class="container">
+      <div class="sobre">
+        <h2>SOBRE</h2>
+        <p>Evento de Software Livre sobre sistemas operacionais FreeBSD, NetBSD, OpenBSD, DragonFly e Linux, com profissionais que atuam no mercado com soluções de software livre, compartilhando seus problemas e soluções.</p>
+        <p>Este evento começou a ser pensado em encontros do grupo de usuários do FreeBSD do Estado do Rio de Janeiro, em 2014 e a sua primeira edição aconteceu em maio de 2015.</p>
+        <p>Inicialmente, o evento foi idealizado apenas para os usuários do sistema FreeBSD, porém com a crescente demanda por software livre, o evento ficou abrangente para todos os sistemas operacionais livres. Com isso, atraiu mais público e podemos convidar palestrantes que atuam em outras áreas do software livre, tais como: desenvolvimento, segurança, equipamentos livres (Arduino), entre outras áreas.</p>
+      </div>
 
-  <!-- Nav - Responsável: Nathan -->
-  <section id="nav"></section>
+      <div class="equipe">
+        <h2>EQUIPE</h2>
+        <ul>
+          <li>Nilton José Rizzo</li>
+          <li>Carlos Eduardo (Cadunico Fodovisk)</li>
+          <li>Vinicius Zavam (Aka egypcio)</li>
+        </ul>
+      </div>
+    </div>
 
-  <!-- Home - Responsável: Lucas -->
-  <section id="home"></section>
+    <div class="rodape">
+      <div>Copyright © BSDDAY 2025</div>
+      <div class="logo">
+        <img src="ufrrj-logo-4.png" alt="Logo UFRRJ">
+        <p>UFRRJ</p>
+      </div>
+      <div>Developed by: Equipe BSDDAY 2025</div>
+    </div>
+  </div>
 
-  <!-- Subscription - Responsável: Lucas -->
-  <section id="subscription"></section>
-
-  <!-- Schedule - Responsável: Fabiano -->
-  <section id="schedule"></section>
-
-  <!-- Map - Responsável: Fabiano -->
-  <section id="map"></section>
-
-  <!-- About and Team Section - Responsável: Davi -->
-  <section id="about-and-team"></section>
-
-  <!-- Footer - Responsável: Davi -->
-  <footer></footer>
 </body>
+</html>
