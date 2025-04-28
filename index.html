@@ -32,7 +32,6 @@
 -->
 
 <body>
-  <!-- Header - Responsável: Nathan -->
   <!-- Hero - Responsável: Nathan -->
   <section id="hero">
 
@@ -84,10 +83,69 @@
   
 
   <!-- Home - Responsável: Lucas -->
-  <section id="home"></section>
+  <section id="home" class="bg-[var(--tertiary-color)] text-white px-6 py-6">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold ml-5 mb-6">HOME</h2>
+      <p class="text-xl mb-4 text-justify ">
+        Décima Primeira Edição do evento sobre Software Livre, rodando sobre sistemas operacionais <strong>*BSD ou
+          Linux.</strong> Este evento tem como objetivo principal, levar conhecimento e novas tecnologias para o
+        interior do estado do Rio de Janeiro, com palestras de profissionais atuante na área com experiências de
+        resolução de problemas com software livre, suas dificuldades e soluções, bem como contribuições à projetos de
+        software livres.
+      </p>
+      <p class="text-xl font-semibold text-justify">
+        O evento acontecerá na Universidade Federal Rural do Rio de Janeiro (UFRRJ), nos dias 30 e 31 de Maio, iniciando
+        às 8h00 e com término previsto para as 18h00.
+      </p>
+    </div>
+  </section>
 
   <!-- Subscription - Responsável: Lucas -->
-  <section id="subscription"></section>
+  <section id="subscription" class="bg-[var(--secondary-color)] text-white">
+    <div class="relative w-full flex justify-center">
+      <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2">
+        <div class="p-6 md:p-10 ml-7 flex flex-col justify-center relative z-10">
+          <h2 class="text-2xl font-bold ml-5 mb-6 text-white">INSCRIÇÃO</h2>
+          <form class="space-y-4 text-base text-white">
+            <div class="flex items-center gap-2">
+
+              <label class="w-auto">Nome:</label>
+              <input type="text" id="nome" class="w-[45%] p-1 text-black" />
+
+              <label class="ml-4">Sexo:</label>
+              <select class="w-[20%] p-1 text-black">
+                <option>Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="flex items-center gap-2">
+
+              <label class="w-auto">E-mail:</label>
+              <input type="email" id="email" class="w-[40%] p-1 text-black" />
+
+              <label class="ml-4">Cidade:</label>
+              <input type="text" id="cidade" class="w-[35%] p-1 text-black" />
+            </div>
+
+            <div class="flex items-center gap-2">
+
+              <label class="w-auto">Data de nascimento:</label>
+              <input type="date" id="data-nascimento" class="w-[25%] p-1 text-black" />
+              <button type="submit" id="submit-btn"
+                class="ml-4 bg-[var(--primary-color)] text-white px-4 py-1">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="hidden md:block absolute top-0 right-0 w-1/2 h-full">
+        <img src="./assets/formulario-img.jpg" alt="formulario-img" class="w-full h-full object-cover" />
+      </div>
+    </div>
+  </section>
 
   <!-- Schedule - Responsável: Fabiano -->
   <section id="schedule" class="bg-[var(--primary-color)]">
