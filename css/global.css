@@ -3,3 +3,7 @@
   --secondary-color: #777777;
   --tertiary-color: #f6900c;
 }
+
+body {
+  scroll-behavior: smooth;
+}

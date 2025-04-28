@@ -33,35 +33,32 @@
 
 <body>
   <!-- Hero - Responsável: Nathan -->
-  <section id="hero">
-
-    <!-- Logo-tipo BSDAY-->
+  <section id="hero" class="min-h-screen flex flex-col">
     <header class="flex justify-center bg-white">  
-      <div class="logo w-64 h-auto m-3">
-        <div><img src="img/logo.png" alt="logo_bsdday"></a></div>
+      <div class="logo w-48 h-auto m-3">
+        <div><img src="img/logo.png" alt="logo_bsdday"></div>
       </div>
     </header>
-   
-  
-  <div class="flex w-screen h-screen">
-    
-    
-    <div class="w-1/2 bg-[var(--primary-color)] text-white flex items-center justify-center">
-    
-      <div class="font-sora text-center p-16 justify-center">
-        <h3 class="font-bold text-9xl">Edição 2025</h3>
-        <h3 class="font-bold text-9xl">do maior</h3>
-        <h3 class="font-bold text-9xl leading-[-300px]">evento de</h3>
-        <h1 class="font-extrabold text-[200px] ">BSD</h1>
-        <h2 class="font-bold text-9xl">do Rio</h2>
-        <h5 class="font-bold text-5xl">30 e 31 de maior de 2025</h5>
-        <p class="text-2xl">Universidade federal Rural do Rio de janeiro (UFRRJ)</p>
-        
-      </div>
-    </div>
 
-    <div class="w-1/2" >
-      <img src="img/P1.png" alt="BSD Rio" class="w-full h-full object-cover">
+    <div class="flex flex-1 w-screen">
+      <!-- Texto Centralizado em telas pequenas -->
+      <div class="w-full lg:w-1/2 bg-[var(--primary-color)] text-white flex items-center justify-center">
+        <div class="font-sora text-center justify-center w-[600px]">
+          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[93px]">Edição 2025</h3>
+          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[130px]">do maior</h3>
+          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[117px]">evento de</h3>
+          <h1 class="font-extrabold w-full p-0 m-0 leading-[0.8] text-[294px] indent-[-20px]">BSD</h1>
+          <h2 class="font-bold w-full p-0 m-0 leading-[0.8] text-[66px]">do Rio de Janeiro</h2>
+        
+          <h5 class="font-bold text-3xl mt-8 m-0 leading-[1]">30 e 31 de maio de 2025</h5>
+          <p class="text-xl m-0 leading-[2]">Universidade Federal Rural do Rio de Janeiro (UFRRJ)</p>
+        </div>                       
+      </div>
+
+      <!-- Imagem visível somente em telas maiores -->
+      <div class="hidden lg:block w-1/2">
+        <img src="img/P1.png" alt="BSD Rio" class="w-full h-full object-cover">
+      </div>
     </div>
   </section>
 
@@ -69,22 +66,22 @@
   <!-- Nav - Responsável: Nathan -->
   <section id="nav">
     <div class="fixed bottom-0 w-full z-50 bg-[var(--secondary-color)] flex justify-center text-white text-sm font-extrabold font-sora">
-      <h1 class="m-3"><a href="#home">HOME</a></h1>
-      <h1 class="m-3">|</h1>
-      <h1 class="m-3"><a href="#inscricao">INSCRIÇÃO</a></h1>
-      <h1 class="m-3">|</h1>
-      <h1 class="m-3"><a href="#agenda">AGENDA</a></h1>
-      <h1 class="m-3">|</h1>
-      <h1 class="m-3"><a href="#como-chegar">COMO CHEGAR</a></h1>
-      <h1 class="m-3">|</h1>
-      <h1 class="m-3"><a href="#sobre">SOBRE</a></h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]"><a href="#home">HOME</a></h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]">|</h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]"><a href="#subscription">INSCRIÇÃO</a></h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]">|</h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]"><a href="#schedule">AGENDA</a></h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]">|</h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]"><a href="#map">COMO CHEGAR</a></h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]">|</h1>
+      <h1 class="m-3 hover:text-[var(--tertiary-color)]"><a href="#about-and-team">SOBRE</a></h1>
     </div>
   </section>
   
 
   <!-- Home - Responsável: Lucas -->
   <section id="home" class="bg-[var(--tertiary-color)] text-white px-6 py-6">
-    <div class="max-w-6xl mx-auto">
+    <div class="max-w-[1400] mx-auto">
       <h2 class="text-2xl md:text-3xl font-bold ml-5 mb-6">HOME</h2>
       <p class="text-xl mb-4 text-justify ">
         Décima Primeira Edição do evento sobre Software Livre, rodando sobre sistemas operacionais <strong>*BSD ou
@@ -103,37 +100,30 @@
   <!-- Subscription - Responsável: Lucas -->
   <section id="subscription" class="bg-[var(--secondary-color)] text-white">
     <div class="relative w-full flex justify-center">
-      <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2">
-        <div class="p-6 md:p-10 ml-7 flex flex-col justify-center relative z-10">
+      <div class="max-w-[1400] w-full grid grid-cols-1 md:grid-cols-2">
+        <div class="py-8 flex flex-col justify-center relative z-10">
           <h2 class="text-2xl font-bold ml-5 mb-6 text-white">INSCRIÇÃO</h2>
           <form class="space-y-4 text-base text-white">
             <div class="flex items-center gap-2">
-
               <label class="w-auto">Nome:</label>
-              <input type="text" id="nome" class="w-[45%] p-1 text-black" />
-
+              <input type="text" id="nome" class="h-[32px] w-[62%] p-1 text-black" />
               <label class="ml-4">Sexo:</label>
-              <select class="w-[20%] p-1 text-black">
+              <select class="h-[32px] p-1 text-black">
                 <option>Selecione</option>
                 <option value="masculino">Masculino</option>
                 <option value="feminino">Feminino</option>
                 <option value="outro">Outro</option>
               </select>
             </div>
-
             <div class="flex items-center gap-2">
-
-              <label class="w-auto">E-mail:</label>
-              <input type="email" id="email" class="w-[40%] p-1 text-black" />
-
-              <label class="ml-4">Cidade:</label>
-              <input type="text" id="cidade" class="w-[35%] p-1 text-black" />
-            </div>
-
-            <div class="flex items-center gap-2">
-
               <label class="w-auto">Data de nascimento:</label>
-              <input type="date" id="data-nascimento" class="w-[25%] p-1 text-black" />
+              <input type="date" id="data-nascimento" class="h-[32px] w-[26%] p-1 text-black" />
+              <label class="ml-4">Cidade:</label>
+              <input type="text" id="cidade" class="h-[32px] w-[33.8%] p-1 text-black" />
+            </div>
+            <div class="flex items-center gap-2">
+              <label class="w-auto">E-mail:</label>
+              <input type="email" id="email" class="h-[32px] w-[71.8%] p-1 text-black" />
               <button type="submit" id="submit-btn"
                 class="ml-4 bg-[var(--primary-color)] text-white px-4 py-1">Enviar</button>
             </div>
@@ -149,7 +139,7 @@
 
   <!-- Schedule - Responsável: Fabiano -->
   <section id="schedule" class="bg-[var(--primary-color)]">
-    <div class="max-w-7xl mx-auto  py-6 px-4">
+    <div class="max-w-[1400] mx-auto  py-6 px-4">
       <h2 class="text-3xl uppercase font-bold pl-4 text-white">Agenda</h2>
 
       <div class="flex flex-col lg:flex-row gap-4">
@@ -346,14 +336,14 @@
 
   <!-- Map - Responsável: Fabiano -->
   <section id="map" class="bg-[var(--tertiary-color)]">
-    <div class="max-w-7xl mx-auto  py-6 px-4">
+    <div class="max-w-[1400] mx-auto  py-6 px-4">
       <h2 class="text-3xl uppercase font-bold pl-4 text-white">Como chegar</h2>
       
       <p class="text-white mt-2"><bold class="font-bold">Endereço:</bold> Zona Rural - BR-465, KM 07, Seropédica</p>
       <p class="text-white"><bold class="font-bold">Local:</bold> Salão Azul, 3 andar do Prédio Principal (P1).</p>
       <p class="text-white mt-2"><bold class="font-bold">Trajeto:</bold> Pegar a BR 465 (Antiga estrada Rio São Paulo) e acessar a Universidade pelo portico principal</p>
       
-      <div class="w-full max-w-6xl mx-auto mt-6">
+      <div class="w-full max-w-[1400] mx-auto mt-6">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.234756988426!2d-43.6946975!3d-22.7683366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995711b2fc521b%3A0x6cad9bb689cbe56a!2sUFRRJ-Pavilh%C3%A3o%20Central!5e0!3m2!1spt-BR!2sbr!4v1713457781234!5m2!1spt-BR!2sbr"
           width="100%"
@@ -368,26 +358,36 @@
   </section>
 
   <!-- About and Team Section - Responsável: Davi -->
-  <section id="about-and-team" class="flex flex-col md:flex-row text-sm font-sora mt-auto">
-    <!-- SOBRE -->
-    <section class="about-bsdday w-full md:w-1/2 bg-bsddayGray2 text-white p-6">
+  <section id="about-and-team" class="flex flex-col md:flex-row text-sm font-sora mt-auto pb-11">
+    <div class="about-bsdday md:w-1/2 bg-[var(--secondary-color)] text-white p-6">
       <h2 class="text-lg font-bold mb-4 border-b-2 border-white inline-block">SOBRE</h2>
       <p class="mb-2">Evento de Software Livre sobre sistemas operacionais FreeBSD, NetBSD, OpenBSD, DragonFly e Linux, com profissionais que atuam no mercado com soluções de software livre, compartilhando seus problemas e soluções.</p>
       <p class="mb-2">Este evento começou a ser pensado em encontros do grupo de usuários do FreeBSD do Estado do Rio de Janeiro, em 2014 e sua primeira edição aconteceu em maio de 2015.</p>
       <p>Inicialmente, o evento foi idealizado apenas para os usuários do sistema FreeBSD, porém com a crescente demanda por software livre, o evento ficou abrangente para todos os sistemas operacionais livres. Com isso, atraiu mais público e podemos convidar palestrantes que atuam em outras áreas de softwares livres, tais como: desenvolvimento, segurança, equipamentos livres (Arduino), entre outras áreas.</p>
-    </section>
+    </div>
 
-    <!-- EQUIPE -->
-    <section class="team-bsdday w-full md:w-1/2 bg-bsddayRed text-white p-6">
+    <div class="team-bsdday w-full md:w-1/2 bg-[var(--primary-color)] text-white p-6">
       <h2 class="text-lg font-bold mb-4 border-b-2 border-white inline-block">EQUIPE</h2>
       <ul class="space-y-2">
-        <li class="font-bold">Nilton José Rizzo Ⓡ</li>
-        <li class="font-bold">Carlos Eduardo (Cadunico Fodovisk) Ⓡ</li>
-        <li class="font-bold">Vinicius Zavam (Aka egypcio) Ⓡ</li>
+        <li class="font-bold">Nilton José Rizzo</li>
+        <li class="font-bold">Carlos Eduardo (Cadunico Fodovisk)</li>
+        <li class="font-bold">Vinicius Zavam (Aka egypcio)</li>
       </ul>
-    </section>
+    </div>
   </section>
 
-  <!-- Footer - Responsável: Davi -->
-  <footer></footer>
+
+  <!-- Footer -->
+  <footer class="bg-white pb-20">
+  <div class="max-w-[1400px] mx-auto flex justify-between items-center">
+    <div class="text-left text-gray-700">
+      <p class="text-lg">Copyright &copy; BSDDAY 2025</p>
+    </div>
+    <div class="text-center">
+      <img src="img/logo-rural.jpg" alt="Logo" class="w-32 h-auto mx-auto">
+    </div>
+    <div class="text-right text-gray-700">
+      <p class="text-lg">Developed by Equipe BSDDAY 2025</p>
+    </div>
+  </div>
 </body>
