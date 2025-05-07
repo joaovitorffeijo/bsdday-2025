@@ -13,52 +13,52 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sora: ['Sora', 'sans-serif'],
-          },
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          sora: ['Sora', 'sans-serif'],
         },
       },
-    };
+    },
+  };
   </script>
 </head>
 
-<!-- 
-  Dicas: 
-  - Use o Tailwind CSS para estilizar os elementos.
-  - Criem um arquivo CSS separado para estilos de cada secão, se necessário.
-  - Criem um arquivo .js separado para scripts de cada secão, se necessário.
-  - Utilize as cores do arquivo global.css.
+<!--
+Dicas:
+- Use o Tailwind CSS para estilizar os elementos.
+- Criem um arquivo CSS separado para estilos de cada secão, se necessário.
+- Criem um arquivo .js separado para scripts de cada secão, se necessário.
+- Utilize as cores do arquivo global.css.
 -->
 
 <body>
   <!-- Hero - Responsável: Nathan -->
   <section id="hero" class="min-h-screen flex flex-col">
-    <header class="flex justify-center bg-white">  
+    <header class="flex justify-center bg-white">
       <div class="logo w-48 h-auto m-3">
         <div><img src="img/logo.png" alt="logo_bsdday"></div>
       </div>
     </header>
 
-    <div class="flex flex-1 w-screen">
+    <div class="flex flex-1">
       <!-- Texto Centralizado em telas pequenas -->
-      <div class="w-full lg:w-1/2 bg-[var(--primary-color)] text-white flex items-center justify-center">
-        <div class="font-sora text-center justify-center w-[600px]">
-          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[93px]">Edição 2025</h3>
-          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[130px]">do maior</h3>
-          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[117px]">evento de</h3>
-          <h1 class="font-extrabold w-full p-0 m-0 leading-[0.8] text-[294px] indent-[-20px]">BSD</h1>
-          <h2 class="font-bold w-full p-0 m-0 leading-[0.8] text-[66px]">do Rio de Janeiro</h2>
-        
+      <div class="w-full bg-[var(--primary-color)] text-white flex items-center justify-center">
+        <div class="font-sora text-center justify-center">
+            <h3 class="font-bold leading-[0.8] text-[clamp(40px,3.63vw,5.8rem)]">Edição 2025</h3>
+            <h3 class="font-bold leading-[0.8] text-[clamp(58px,5.07vw,8.1rem)]">do maior</h3>
+            <h3 class="font-bold leading-[0.8] text-[clamp(52px,4.57vw,7.3rem)]">evento de</h3>
+            <h1 class="font-extrabold leading-[0.8] text-[clamp(130px,11.48vw,18.3rem)]">BSD</h1>
+            <h2 class="font-bold leading-[0.8] text-[clamp(28px,2.57vw,4.1rem)]">do Rio de Janeiro</h2>
+
           <h5 class="font-bold text-3xl mt-8 m-0 leading-[1]">30 e 31 de maio de 2025</h5>
           <p class="text-xl m-0 leading-[2]">Universidade Federal Rural do Rio de Janeiro (UFRRJ)</p>
-        </div>                       
+        </div>
       </div>
 
       <!-- Imagem visível somente em telas maiores -->
-      <div class="hidden lg:block w-1/2">
+      <div class="hidden lg:block w-full">
         <img src="img/P1.png" alt="BSD Rio" class="w-full h-full object-cover">
       </div>
     </div>
@@ -79,7 +79,7 @@
       <h1 class="m-3 hover:text-[var(--tertiary-color)]"><a href="#about-and-team">SOBRE</a></h1>
     </div>
   </section>
-  
+
 
   <!-- Home - Responsável: Lucas -->
   <section id="home" class="bg-[var(--tertiary-color)] text-white px-6 py-6">
@@ -338,13 +338,13 @@
 
   <!-- Map - Responsável: Fabiano -->
   <section id="map" class="bg-[var(--tertiary-color)]">
-    <div class="max-w-[1400] mx-auto  py-6 px-4">
+    <div class="max-w-[1400] mx-auto py-6 px-4">
       <h2 class="text-3xl uppercase font-bold pl-4 text-white">Como chegar</h2>
-      
+
       <p class="text-white mt-2"><bold class="font-bold">Endereço:</bold> Zona Rural - BR-465, KM 07, Seropédica</p>
       <p class="text-white"><bold class="font-bold">Local:</bold> Salão Azul, 3 andar do Prédio Principal (P1).</p>
       <p class="text-white mt-2"><bold class="font-bold">Trajeto:</bold> Pegar a BR 465 (Antiga estrada Rio São Paulo) e acessar a Universidade pelo portico principal</p>
-      
+
       <div class="w-full max-w-[1400] mx-auto mt-6">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.234756988426!2d-43.6946975!3d-22.7683366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x995711b2fc521b%3A0x6cad9bb689cbe56a!2sUFRRJ-Pavilh%C3%A3o%20Central!5e0!3m2!1spt-BR!2sbr!4v1713457781234!5m2!1spt-BR!2sbr"
@@ -378,7 +378,7 @@
         <li class="font-bold">Fabiano de Sousa Lima</li>
         <li class="font-bold">David Barros da Rosa Filho</li>
         <li class="font-bold">Lucas Gusmão Baptista</li>
-        <li class="font-bold">Nathan Teixeira de Oliveira</li>    
+        <li class="font-bold">Nathan Teixeira de Oliveira</li>
       </ul>
     </div>
   </section>
@@ -386,15 +386,14 @@
 
   <!-- Footer -->
   <footer class="bg-white pb-20">
-  <div class="max-w-[1400px] mx-auto flex justify-between items-center">
-    <div class="text-left text-gray-700">
-      <p class="text-lg">Copyright &copy; BSDDAY 2025</p>
+    <div class="max-w-[1400px] px-6 mx-auto flex flex-col items-center gap-4">
+      <div class="text-center">
+        <img src="img/logo-rural.jpg" alt="Logo" class="w-32 h-auto mx-auto">
+      </div>
+
+      <div class="text-gray-700 text-center">
+        <p class="text-lg">Copyright &copy; BSDDAY 2025</p>
+        <p class="text-lg">Developed by Equipe BSDDAY 2025</p>
+      </div>
     </div>
-    <div class="text-center">
-      <img src="img/logo-rural.jpg" alt="Logo" class="w-32 h-auto mx-auto">
-    </div>
-    <div class="text-right text-gray-700">
-      <p class="text-lg">Developed by Equipe BSDDAY 2025</p>
-    </div>
-  </div>
 </body>
