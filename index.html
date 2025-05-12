@@ -44,14 +44,29 @@ Dicas:
 
     <div class="flex flex-1">
       <!-- Texto Centralizado em telas pequenas -->
-      <div class="w-full bg-[var(--primary-color)] text-white flex items-center justify-center">
+      <div class="w-full bg-[var(--primary-color)] text-white flex items-center justify-center lg:hidden">
+        <!-- Primeira versão: visível apenas em tablets e celulares -->
         <div class="font-sora text-center justify-center">
-            <h3 class="font-bold leading-[0.8] text-[clamp(40px,3.63vw,5.8rem)]">Edição 2025</h3>
-            <h3 class="font-bold leading-[0.8] text-[clamp(58px,5.07vw,8.1rem)]">do maior</h3>
-            <h3 class="font-bold leading-[0.8] text-[clamp(52px,4.57vw,7.3rem)]">evento de</h3>
-            <h1 class="font-extrabold leading-[0.8] text-[clamp(130px,11.48vw,18.3rem)]">BSD</h1>
-            <h2 class="font-bold leading-[0.8] text-[clamp(28px,2.57vw,4.1rem)]">do Rio de Janeiro</h2>
-
+          <h3 class="font-bold leading-[0.8] text-[clamp(40px,3.63vw,5.8rem)]">Edição 2025</h3>
+          <h3 class="font-bold leading-[0.8] text-[clamp(58px,5.07vw,8.1rem)]">do maior</h3>
+          <h3 class="font-bold leading-[0.8] text-[clamp(52px,4.57vw,7.3rem)]">evento de</h3>
+          <h1 class="font-extrabold leading-[0.8] text-[clamp(130px,11.48vw,18.3rem)]">BSD</h1>
+          <h2 class="font-bold leading-[0.8] text-[clamp(28px,2.57vw,4.1rem)]">do Rio de Janeiro</h2>
+      
+          <h5 class="font-bold text-3xl mt-8 m-0 leading-[1]">30 e 31 de maio de 2025</h5>
+          <p class="text-xl m-0 leading-[2]">Universidade Federal Rural do Rio de Janeiro (UFRRJ)</p>
+        </div>
+      </div>
+      
+      <div class="hidden lg:flex w-full  bg-[var(--primary-color)] text-white items-center justify-center">
+        <!-- Segunda versão: visível apenas em desktops -->
+        <div class="font-sora text-center justify-center w-[600px]">
+          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[93px]">Edição 2025</h3>
+          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[130px]">do maior</h3>
+          <h3 class="font-bold w-full p-0 m-0 leading-[0.8] text-[117px]">evento de</h3>
+          <h1 class="font-extrabold w-full p-0 m-0 leading-[0.8] text-[294px] indent-[-20px]">BSD</h1>
+          <h2 class="font-bold w-full p-0 m-0 leading-[0.8] text-[66px]">do Rio de Janeiro</h2>
+      
           <h5 class="font-bold text-3xl mt-8 m-0 leading-[1]">30 e 31 de maio de 2025</h5>
           <p class="text-xl m-0 leading-[2]">Universidade Federal Rural do Rio de Janeiro (UFRRJ)</p>
         </div>
