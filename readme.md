@@ -4,7 +4,7 @@ Site do BSDDAY 2025, evento sobre software livre da UFRRJ organizado pelo profes
 
 ## Integrantes
 
-- João Vítor Feijó
+- João Vítor Feijó (Supervisão)
 - Fabiano de Sousa Lima
 - David Barros da Rosa Filho
 - Lucas Gusmão Baptista
